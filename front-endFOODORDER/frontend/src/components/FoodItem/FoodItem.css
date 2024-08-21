@@ -1,0 +1,87 @@
+.food-item {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Renk ve opaklığı düzelttim */
+    transition: 0.3s;
+    animation: fadeIn 1s; /* FadeIn animasyonu tanımlandı mı kontrol edin */
+}
+
+.food-item-image {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.food-item-info {
+    padding: 20px;
+}
+
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.food-item-name-rating p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.food-item-name-rating .rating-stars {
+    display: flex;
+    gap: 2px; /* Yıldızlar arasındaki boşluğu ayarlayın */
+}
+
+.food-item-name-rating .rating-stars img {
+    width: 20px; /* Yıldız boyutunu ayarlayın */
+}
+
+.food-item-desc {
+    color: #676767;
+    font-size: 12px;
+    margin-bottom: 10px; /* Açıklama altına boşluk ekledim */
+}
+
+.food-item-price {
+    color: tomato;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.food-item-image-container {
+    position: relative;
+}
+
+.food-item-image-container .add-to-cart, /* Sınıf adı daha açıklayıcı hale getirildi */
+.food-item-image-container .remove-from-cart,
+.food-item-image-container .increase-quantity {
+    width: 35px;
+    position: absolute;
+    bottom: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.food-item-image-container .add-to-cart {
+    right: 15px;
+}
+
+.food-item-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid #ddd; /* Kenar çizgisi */
+}
+
+.food-item-counter img {
+    width: 30px;
+    cursor: pointer;
+}

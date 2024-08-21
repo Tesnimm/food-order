@@ -1,0 +1,67 @@
+.header {
+  height: 34vw;
+  margin: 30px auto;
+  background: url('/header1.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 22px);
+  margin: 0; /* Başlık altı boşluğu kaldırmak için */
+}
+
+.header-contents p {
+  color: white;
+  font-size: 1vw;
+  margin: 0; /* Paragraf altı boşluğu kaldırmak için */
+}
+
+.header-contents button {
+  border: none;
+  color: #747474;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw, 13px);
+  cursor: pointer; /* İmleç işareti ekleyin */
+  border-radius: 5px; /* Buton köşelerini yuvarlayın */
+}
+
+@media (max-width: 1050px) {
+  .header {
+    height: 38vw;
+  }
+
+  .header-contents {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-contents {
+    max-width: 65%;
+  }
+
+  .header-contents p {
+    display: none; 
+  }
+
+  .header-contents button {
+    padding: 2vw 4vw;
+  }
+}
